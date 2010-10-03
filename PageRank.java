@@ -34,7 +34,7 @@ public class PageRank {
 	}
 	public double[] calcPageRank(double threshold, int maxIteration){
 		/*
-		 * P©g‚ğ\•ª‚È‰ñ”‚¾‚¯Š|‚¯Z‚µ‚½s—ñ‚Ì‘ÎŠp¬•ª‚Æ‚µ‚ÄŒvZ‚·‚é
+		 * Iteration of to multiply by P itself and returns diagonal elements
 		 */
 		double[][] Pn = new double[nodeNum][nodeNum];
 		for(int i=0; i<Pn.length; i++){
